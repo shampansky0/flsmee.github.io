@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700;1,900&display=swap');
 
 html {
-  font-family: comicSans;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -15,11 +15,13 @@ body {
   transform: translate(-50% , -50%)
 }
 a {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 0px rgba(8, 230, 255, 1), -1px -1px 0px rgba(255, 0, 0, 1);
 }
+
 a:hover {
-  color: red;
+	color: black;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -82,6 +84,7 @@ hr {
   --borderWidth: 8px;
   background: #191919;
   position: absolute;
+
 }
 .gradient-border:after {
   content: '';
@@ -107,4 +110,13 @@ hr {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
 }
