@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <video autoplay muted loop id="myVideo">
-  <source src="css/background.mp4" type="video/mp4">
-</video>
-<audio src="css/background.mp3" id="audio" autoplay loop>
-<embed src="css/background.mp3" width="180" height="90" hidden="true" />
-</audio>
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+     <!--<iframe frameborder="0" height="100%" width="100%"
+       src="https://youtube.com/embed/cqjPtg0iyl8?autoplay=1&controls=0&showinfo=0&autohide=1">
+     </iframe>-->
+     <iframe id="myVideo" src="https://streamable.com/e/36v6n8?autoplay=1&nocontrols=1" frameborder="0" allowfullscreen allow="autoplay">
+     </iframe>
+</div>
     <div class="center">
       <div class="gradient-border" id="box">
         <br>
@@ -36,11 +37,10 @@
     var video = document.getElementById("myVideo");
 	function titlebar(val)
 	{
-	var msg = "flamee";
 	var res = " ";
 	var speed = 100;
 	var pos = val;
-	msg = "-x- "+msg+" -x-";
+	msg = "-x- flamee -x-";
 	var le = msg.length;
 	if(rev == "fwd"){
 	if(pos < le){
