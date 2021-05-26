@@ -6,21 +6,22 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <audio src="css/background.mp3" id="audio" autoplay loop>
-  <embed src="css/background.mp3" width="180" height="90" hidden="true" />
-</audio>
     <video autoplay muted loop id="myVideo">
   <source src="css/background.mp4" type="video/mp4">
 </video>
+<audio src="css/background.mp3" id="audio" autoplay loop>
+<embed src="css/background.mp3" width="180" height="90" hidden="true" />
+</audio>
     <div class="center">
       <div class="gradient-border" id="box">
         <br>
-        <img src="https://avatars.githubusercontent.com/u/61624814?v=4" id="button" alt="flamee" width="200" height="200" style="border-radius: 100px;"> <br>
+        <img src="https://avatars.githubusercontent.com/u/61624814?v=4" id="button" alt="flamee" width="200" height="200" style="border-radius: 100px; cursor: pointer;"> <br>
         <hr>
         <a href="https://github.com/flsmee">GitHub</a><br>
         <a href="https://twitter.com/FlameeExe">Twitter</a><br>
         <a href="#">Discord</a><br> <!-- TO DO -->
         <a href="#">Session</a><br>
+      </div>
       </div>
     </div>
   </body>
@@ -30,6 +31,7 @@
     var button = document.getElementById("button");
     button.addEventListener("click", playPause);
     audio = document.getElementById("audio");
+    var video = document.getElementById("myVideo");
 	function titlebar(val)
 	{
 	var msg = "flamee";
@@ -65,9 +67,11 @@
 	function playPause() {
 		if (audio.paused) {
 			audio.play();
+      video.play();
 			}
 		else  {
 			audio.pause();
+      video.pause();
 			}
 	}
   </script>
