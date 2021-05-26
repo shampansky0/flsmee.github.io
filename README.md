@@ -1,3 +1,3 @@
-# beta
- My beta testing Website
+# Beta Testing...
+ Beta Channel for my Website
  https://flsmee.github.io/beta
