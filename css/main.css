@@ -19,10 +19,12 @@ a {
 	text-decoration: none;
 	color: white;
 	text-shadow: 1px 1px 0px rgba(8, 230, 255, 1), -1px -1px 0px rgba(255, 0, 0, 1);
+  transition: 200ms linear;
 }
 
 a:hover {
 	color: black;
+  transition: 200ms linear;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
