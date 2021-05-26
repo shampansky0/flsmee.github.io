@@ -6,18 +6,69 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <audio src="css/background.mp3" id="audio" autoplay loop>
+  <embed src="css/background.mp3" width="180" height="90" hidden="true" />
+</audio>
     <video autoplay muted loop id="myVideo">
   <source src="css/background.mp4" type="video/mp4">
 </video>
-<audio src="css/background.mp3" autoplay loop></audio>
     <div class="center">
       <div class="gradient-border" id="box">
-        <h1>flamee</h1><br>
+        <br>
+        <img src="https://avatars.githubusercontent.com/u/61624814?v=4" id="button" alt="flamee" width="200" height="200" style="border-radius: 100px;"> <br>
+        <hr>
         <a href="https://github.com/flsmee">GitHub</a><br>
-        <a href="https://github.com/flsmee">Twitter</a><br>
-        <a href="https://github.com/flsmee">Discord</a><br>
-        <a href="https://github.com/flsmee">Session</a><br>
+        <a href="https://twitter.com/FlameeExe">Twitter</a><br>
+        <a href="#">Discord</a><br> <!-- TO DO -->
+        <a href="#">Session</a><br>
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+	// Credits to https://www.hscripts.com/scripts/JavaScript/title-scrol.php
+		var rev = "fwd";
+    var button = document.getElementById("button");
+    button.addEventListener("click", playPause);
+    audio = document.getElementById("audio");
+	function titlebar(val)
+	{
+	var msg = "flamee";
+	var res = " ";
+	var speed = 100;
+	var pos = val;
+	msg = "-x- "+msg+" -x-";
+	var le = msg.length;
+	if(rev == "fwd"){
+	if(pos < le){
+	pos = pos+1;
+	scroll = msg.substr(0,pos);
+	document.title = scroll;
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+	}else{
+	rev = "bwd";
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+		}
+	}else{
+	if(pos > 0){
+	pos = pos-1;
+	var ale = le-pos;
+	scrol = msg.substr(ale,le);
+	document.title = scrol;
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+	}else{
+	rev = "fwd";
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+		}
+	}
+}
+	titlebar(0);
+	function playPause() {
+		if (audio.paused) {
+			audio.play();
+			}
+		else  {
+			audio.pause();
+			}
+	}
+  </script>
 </html>

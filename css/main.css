@@ -26,6 +26,9 @@ h1 {
     font-style: italic;
     font-weight: 900;
 }
+hr {
+  color: #1E1E1E; /* omg fragt mich nicht wie clean ich bitte an die farbe gekommen bin */
+}
 /* w3schools is my passion */
 #myVideo {
   position: fixed;
@@ -44,6 +47,7 @@ h1 {
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+
 }
 
 .slider::-webkit-slider-thumb {
@@ -69,7 +73,8 @@ h1 {
   height: 550px;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+    font-style: italic;
+    font-weight: 900;
   font-size: 2.5rem;
 
 }
