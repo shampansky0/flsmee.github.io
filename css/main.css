@@ -8,8 +8,7 @@ body {
   text-align: center;
   background-color: black;
 }
-@media only screen and (orientation: landscape) {
-  .center{
+.center{
     padding-top: 7%;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -29,11 +28,28 @@ body {
     font-size: 2.5rem;
     flex: 0 1 auto;
   }
-}
+  .gradient-border {
+    --borderWidth: 8px;
+    background: #191919;
+    position: absolute;
 
-@media only screen and (orientation: portrait) {
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    z-index: -1;
+    animation: animatedgradient 5s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+}
+@media only screen and (orientation: portrait) and (min-width: 900px) {
   .center{
-    padding-top: 10%;
+    padding-top: 20%;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -52,8 +68,25 @@ body {
     font-size: 3.0rem;
     flex: 0 1 auto;
   }
-}
+  .gradient-border {
+    --borderWidth: 8px;
+    background: #191919;
+    position: absolute;
 
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    z-index: -1;
+    animation: animatedgradient 5s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+}
 a {
 	text-decoration: none;
 	color: white;
@@ -111,26 +144,6 @@ hr {
   background: #5c6bc0;
   cursor: pointer;
 }
-
-.gradient-border {
-  --borderWidth: 8px;
-  background: #191919;
-  position: absolute;
-
-}
-.gradient-border:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  z-index: -1;
-  animation: animatedgradient 5s ease alternate infinite;
-  background-size: 300% 300%;
-}
-
 
 @keyframes animatedgradient {
 	0% {
