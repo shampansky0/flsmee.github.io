@@ -61,12 +61,12 @@ body {
     #box {
       text-align: center;
       width: 350px;
-      height: 550px;
+      height: 650px;
       color: white;
       font-family: 'Roboto', sans-serif;
         font-style: italic;
         font-weight: 900;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       flex: 0 1 auto;
     }
     .gradient-border {
