@@ -21,7 +21,7 @@ body {
   #box {
     text-align: center;
     width: 350px;
-    height: 550px;
+    height: 600px;
     color: white;
     font-family: 'Roboto', sans-serif;
       font-style: italic;
@@ -173,4 +173,15 @@ hr {
   border-radius: 50%;
   background: #5c6bc0;
   cursor: pointer;
+}
+.centerTextXd{
+    padding-top: 7%;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+.textOut {
+  font-size: 1.5rem;
+	color: white;
+	text-shadow: 1px 1px 0px rgba(8, 230, 255, 1), -1px -1px 0px rgba(255, 0, 0, 1);
+  display: none;
 }
