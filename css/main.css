@@ -8,6 +8,16 @@ body {
   text-align: center;
   background-color: black;
 }
+
+/* w3schools is my passion */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .center{
     padding-top: 7%;
     display: -ms-flexbox;
@@ -106,14 +116,7 @@ h1 {
 hr {
   color: #1E1E1E; /* omg fragt mich nicht wie clean ich bitte an die farbe gekommen bin */
 }
-/* w3schools is my passion */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
+
 .slider {
   -webkit-appearance: none;
   width: 33%;
