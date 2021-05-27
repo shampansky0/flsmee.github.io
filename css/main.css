@@ -10,10 +10,13 @@ body {
 }
 @media only screen and (orientation: landscape) {
   .center{
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    transform: translate(-50% , -50%)
+    padding-top: 7%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    justify-content: center;
   }
   #box {
     text-align: center;
@@ -24,27 +27,30 @@ body {
       font-style: italic;
       font-weight: 900;
     font-size: 2.5rem;
-
+    flex: 0 1 auto;
   }
 }
 
 @media only screen and (orientation: portrait) {
   .center{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-50% , -50%)
+    padding-top: 10%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    justify-content: center;
   }
   #box {
     text-align: center;
     width: 350px;
-    height: 550px;
+    height: 600px;
     color: white;
     font-family: 'Roboto', sans-serif;
       font-style: italic;
       font-weight: 900;
     font-size: 3.0rem;
-
+    flex: 0 1 auto;
   }
 }
 
