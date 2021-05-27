@@ -8,13 +8,24 @@ body {
   text-align: center;
   background-color: black;
 }
-
-.center{
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  transform: translate(-50% , -50%)
+@media only screen and (orientation: landscape) {
+  .center{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50% , -50%)
+  }
 }
+
+@media only screen and (orientation: portrait) {
+  .center{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50% , -50%)
+  }
+}
+
 a {
 	text-decoration: none;
 	color: white;
