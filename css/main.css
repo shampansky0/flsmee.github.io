@@ -15,14 +15,36 @@ body {
     left: 40%;
     transform: translate(-50% , -50%)
   }
+  #box {
+    text-align: center;
+    width: 350px;
+    height: 550px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+      font-style: italic;
+      font-weight: 900;
+    font-size: 2.5rem;
+
+  }
 }
 
 @media only screen and (orientation: portrait) {
   .center{
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 30%;
     transform: translate(-50% , -50%)
+  }
+  #box {
+    text-align: center;
+    width: 350px;
+    height: 550px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+      font-style: italic;
+      font-weight: 900;
+    font-size: 3.0rem;
+
   }
 }
 
@@ -83,17 +105,7 @@ hr {
   background: #5c6bc0;
   cursor: pointer;
 }
-#box {
-  text-align: center;
-  width: 350px;
-  height: 550px;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: 900;
-  font-size: 2.5rem;
 
-}
 .gradient-border {
   --borderWidth: 8px;
   background: #191919;
