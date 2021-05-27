@@ -47,6 +47,17 @@ body {
     animation: animatedgradient 5s ease alternate infinite;
     background-size: 300% 300%;
   }
+  @keyframes animatedgradient {
+  	0% {
+  		background-position: 0% 50%;
+  	}
+  	50% {
+  		background-position: 100% 50%;
+  	}
+  	100% {
+  		background-position: 0% 50%;
+  	}
+  }
 }
 @media only screen and (orientation: portrait) {
   .center{
@@ -86,6 +97,17 @@ body {
       z-index: -1;
       animation: animatedgradient 5s ease alternate infinite;
       background-size: 300% 300%;
+    }
+    @keyframes animatedgradient {
+    	0% {
+    		background-position: 0% 50%;
+    	}
+    	50% {
+    		background-position: 100% 50%;
+    	}
+    	100% {
+    		background-position: 0% 50%;
+    	}
     }
 }
 /* w3schools is my passion */
@@ -145,25 +167,4 @@ hr {
   border-radius: 50%;
   background: #5c6bc0;
   cursor: pointer;
-}
-
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@-webkit-keyframes hue {
-    from {
-      -webkit-filter: hue-rotate(0deg);
-    }
-    to {
-      -webkit-filter: hue-rotate(360deg);
-    }
 }
