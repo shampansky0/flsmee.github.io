@@ -58,6 +58,14 @@ body {
   		background-position: 0% 50%;
   	}
   }
+  /* w3schools is my passion */
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 @media only screen and (orientation: portrait) {
   .center{
@@ -109,14 +117,12 @@ body {
     		background-position: 0% 50%;
     	}
     }
-}
-/* w3schools is my passion */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+    /* w3schools is my passion */
+    #myVideo {
+      position: fixed;
+      right: 5000px;
+      bottom: 5000px;
+    }
 }
 a {
 	text-decoration: none;
