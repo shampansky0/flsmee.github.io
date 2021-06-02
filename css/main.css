@@ -89,7 +89,7 @@ body {
       flex: 0 1 auto;
     }
     .gradient-border {
-      --borderWidth: 8px;
+      --borderWidth: 10px;
       background: #191919;
       position: absolute;
 
