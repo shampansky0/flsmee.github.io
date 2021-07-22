@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font awesome version 5.15.3 -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
     <!-- HTML Meta Tags -->
     <title>made with jimdo®</title>
     <meta name="description" content="omg renegade down omg™">
@@ -27,19 +29,61 @@
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript" src="js/pause.js"></script>
-
+    <script language="JavaScript">
+		$(document).keydown(function(event){
+		  if(event.keyCode==123){
+		  return false;
+		 }
+		else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
+		    return false;  //Prevent from ctrl+shift+i
+		 }
+		});
+		</script>
+		<script>
+		document.onkeydown = function(e) {
+		if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+		}
+		return false;
+		};
+		</script>
+		<script language="JavaScript">
+		function click() {
+		if (event.button==2||event.button==3) {
+		oncontextmenu='return false';
+		}
+		}
+		document.onmousedown=click
+		document.oncontextmenu = new Function("return false;")
+		</script>
+    <script type="text/javascript">
+    function play() {
+      document.getElementById('audio').play();
+      document.getElementById("myVideo").play();
+    }
+    function pause() {
+      document.getElementById('audio').pause();
+      document.getElementById("myVideo").pause();
+    }
+    function SetVolume(val)
+    {
+      document.getElementById('audio').volume = val / 100;
+    }
+    </script>
   </head>
   <body>
     <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-     <!--<iframe frameborder="0" height="100%" width="100%"
-       src="https://youtube.com/embed/cqjPtg0iyl8?autoplay=1&controls=0&showinfo=0&autohide=1">
-     </iframe>-->
-     <iframe src="https://streamable.com/e/5t2t57?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" class="myVideo"></iframe>
+      <video autoplay muted loop id="myVideo">
+        <source src="css/background.mp4" type="video/mp4">
+        </video>
+        <audio src="css/background.mp3" id="audio" autoplay loop></audio>
+     <!--<iframe src="https://streamable.com/e/5t2t57?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" class="myVideo"></iframe>-->
 </div>
     <div class="center" id="card">
       <div class="gradient-border" id="box">
         <br>
-        <img src="https://avatars.githubusercontent.com/u/61624814?v=4" id="button" alt="flamee" width="200" height="200" style="border-radius: 100px; cursor: pointer;" onclick="document.getElementById('card').style.display = 'none'"> <br>
+        <img src="https://avatars.githubusercontent.com/u/61624814?v=4" id="button" alt="flamee" width="200" height="200" style="border-radius: 100px; cursor: pointer;" onclick="if(document.getElementById('settings').style.display.toString() === 'block') document.getElementById('settings').style.display = 'none'; else document.getElementById('settings').style.display = 'block';"> <br>
+        <div style="display:none" class="textOut" id="settings"><a onclick="play()" href="#"><i class="fa fa-play"></i></a> <a onclick="pause()" href="#"><i class="fa fa-pause"></i></a>
+        <input class="slider" id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" value="30"></input></div>
         <hr>
             <div class="centerTextXd">
         <a href="https://github.com/flsmee">GitHub</a><br>
@@ -47,7 +91,6 @@
         <a href="#" onclick="if(document.getElementById('discord').style.display.toString() === 'block') document.getElementById('discord').style.display = 'none'; else document.getElementById('discord').style.display = 'block';">Discord</a><br>
         <div style="display:none" class="textOut" id="discord">@/fleɪmɛ/#5021 <a onclick="var text='sex';text.select();text.setSelectionRange(0, 99999);document.execCommand('copy');alert('fick deine mutter');" href="#"><i class="fa fa-copy"></i></a></div>
         <a href="https://flsmee.github.io/beta">Beta</a><br>
-        <!-- Session ID can by found on my Twitter -->
       </div>
       </div>
       </div>
