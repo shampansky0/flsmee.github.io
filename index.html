@@ -28,21 +28,16 @@
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <script type="text/javascript" src="js/title.js"></script>
-    <script type="text/javascript">
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  var popup = document.getElementById("myPopup");
+    <script>
 function myFunction() {
-if (!isChrome){
+  var popup = document.getElementById("myPopup");
   if(popup.style.display.toString() === 'block')
   popup.style.display = 'none';
   else
   popup.style.display = 'block';
+  popup.classList.toggle("show");
 }
-else {
-    popup.classList.toggle("show");
-}
-}
-    </script>
+</script>
     <script type="text/javascript">
     function play() {
       document.getElementById('audio').play();
