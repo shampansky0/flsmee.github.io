@@ -30,24 +30,19 @@
     <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript">
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-if (!isChrome){
-    document.getElementById('iframeAudio').remove();
-}
-else {
-    document.getElementById('audio').pause();
-}
-    </script>
-    <script>
-// When the user clicks on <div>, open the popup
-function myFunction() {
   var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+function myFunction() {
+if (!isChrome){
   if(popup.style.display.toString() === 'block')
   popup.style.display = 'none';
   else
   popup.style.display = 'block';
 }
-</script>
+else {
+    popup.classList.toggle("show");
+}
+}
+    </script>
     <script type="text/javascript">
     function play() {
       document.getElementById('audio').play();
