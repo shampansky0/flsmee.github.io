@@ -204,6 +204,7 @@ hr {
   top: 50%;
   right: 80%;
   margin-left: -80px;
+  display: none;
 }
 
 /* Popup arrow */
@@ -211,12 +212,12 @@ hr {
   content: "";
   position: absolute;
   margin-left: -5px;
-  border-style: solid;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
+  display: block;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
 }
