@@ -28,7 +28,6 @@
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <script type="text/javascript" src="js/title.js"></script>
-    <script type="text/javascript" src="js/pause.js"></script>
     <script language="JavaScript">
 		$(document).keydown(function(event){
 		  if(event.keyCode==123){
@@ -39,6 +38,22 @@
 		 }
 		});
 		</script>
+    <script type="text/javascript">
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (!isChrome){
+    document.getElementById('iframeAudio').remove();
+}
+else {
+    document.getElementById('audio').pause();
+}
+    </script>
+    <script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 		<script>
 		document.onkeydown = function(e) {
 		if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
@@ -78,6 +93,9 @@
         <audio src="css/background.mp3" id="audio" autoplay loop></audio>
      <!--<iframe src="https://streamable.com/e/5t2t57?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" class="myVideo"></iframe>-->
 </div>
+<div class="popup">
+<span class="popuptext" id="myPopup"><img src="https://media.discordapp.net/attachments/670004217334988850/711565426949357628/new_version.PNG"></img></span>
+</div>
     <div class="center" id="card">
       <div class="gradient-border" id="box">
         <br>
@@ -90,7 +108,7 @@
         <a href="https://twitter.com/FlameeExe">Twitter</a><br>
         <a href="#" onclick="if(document.getElementById('discord').style.display.toString() === 'block') document.getElementById('discord').style.display = 'none'; else document.getElementById('discord').style.display = 'block';">Discord</a><br>
         <div style="display:none" class="textOut" id="discord">@/fleɪmɛ/#5021 <a onclick="var text='sex';text.select();text.setSelectionRange(0, 99999);document.execCommand('copy');alert('fick deine mutter');" href="#"><i class="fa fa-copy"></i></a></div>
-        <a href="https://flsmee.github.io/beta">Beta</a><br>
+        <a href="#" onclick="myFunction()">Beta</a><br>
       </div>
       </div>
       </div>
