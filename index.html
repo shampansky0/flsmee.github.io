@@ -1,0 +1,104 @@
+<!--
+___________.____       _____      _____  ______________________
+\_   _____/|    |     /  _  \    /     \ \_   _____/\_   _____/
+ |    __)  |    |    /  /_\  \  /  \ /  \ |    __)_  |    __)_
+ |     \   |    |___/    |    \/    Y    \|        \ |        \
+ \___  /   |_______ \____|__  /\____|__  /_______  //_______  /
+     \/            \/       \/         \/        \/         \/
+ have fun reading my rtd code xx
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- BUILD 1:56 PM -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font awesome version 5.15.3 -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- HTML Meta Tags -->
+    <title>made with jimdo®</title>
+    <meta name="description" content="omg renegade down omg™">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://flsmee.github.io/beta">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="made with jimdo®">
+    <meta property="og:description" content="omg renegade down omg™">
+    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https://tse3.mm.bing.net/th?id=OIP.bC3axMfqnUTdzRvxmzGmsAHaEK&pid=Api&f=1">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="flsmee.github.io">
+    <meta property="twitter:url" content="https://flsmee.github.io/beta">
+    <meta name="twitter:title" content="made with jimdo®">
+    <meta name="twitter:description" content="omg renegade down omg™">
+    <meta name="twitter:image" content="https://external-content.duckduckgo.com/iu/?u=https://tse3.mm.bing.net/th?id=OIP.bC3axMfqnUTdzRvxmzGmsAHaEK&pid=Api&f=1">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <script type="text/javascript" src="js/title.js"></script>
+    <script>
+function popUpdate() {
+  var popup = document.getElementById("updatePop");
+  if(popup.style.display.toString() === 'block')
+  popup.style.display = 'none';
+  else
+  popup.style.display = 'block';
+  popup.classList.toggle("show");
+}
+</script>
+    <script type="text/javascript">
+
+    function play() {
+      document.getElementById('audio').play();
+      document.getElementById("myVideo").play();
+      document.getElementById('play').style.display = 'none';
+      document.getElementById('pause').style.display = 'inline';
+    }
+    function pause() {
+      document.getElementById('audio').pause();
+      document.getElementById("myVideo").pause();
+      document.getElementById('play').style.display = 'inline';
+      document.getElementById('pause').style.display = 'none';
+    }
+    function SetVolume(val)
+    {
+      document.getElementById('audio').volume = val / 100;
+    }
+    </script>
+  </head>
+  <body>
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+      <video autoplay muted loop id="myVideo">
+        <source src="css/background.mp4" type="video/mp4">
+        </video>
+        <audio src="css/background.mp3" id="audio" autoplay loop></audio>
+     <!--<iframe src="https://streamable.com/e/5t2t57?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" class="myVideo"></iframe>-->
+</div>
+<div class="popup">
+<span style="display: none;" class="popuptext" id="updatePop"><img src="https://media.discordapp.net/attachments/670004217334988850/711565426949357628/new_version.PNG"></img></span>
+</div>
+    <div class="center" id="card">
+      <div class="gradient-border" id="box">
+        <br>
+        <img src="https://avatars.githubusercontent.com/u/61624814?v=4" id="button" alt="flamee" width="200" height="200" style="border-radius: 100px; cursor: pointer;" onclick="if(document.getElementById('settings').style.display.toString() === 'block') document.getElementById('settings').style.display = 'none'; else document.getElementById('settings').style.display = 'block';"> <br>
+        <div style="display:none" class="textOut" id="settings">
+          <a onclick="play()" href="#" id="play" style="display:none">
+            <i class="fa fa-play"></i></a>
+              <a onclick="pause()" style="display:inline" href="#" id="pause">
+                <i class="fa fa-pause"></i></a>
+
+        <input class="slider" id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" value="30"></input></div>
+        <hr>
+            <div class="centerTextXd">
+        <a href="https://github.com/flsmee">GitHub</a><br>
+        <a href="https://twitter.com/FlameeExe">Twitter</a><br>
+        <a href="#" onclick="if(document.getElementById('discord').style.display.toString() === 'block') document.getElementById('discord').style.display = 'none'; else document.getElementById('discord').style.display = 'block';">Discord</a><br>
+        <div style="display:none" class="textOut" id="discord">@/fleɪmɛ/#5021 <a onclick="var text='/fleɪmɛ/#5021';text.select();text.setSelectionRange(0, 99999);document.execCommand('copy');" href="#"><i class="fa fa-copy"></i></a></div>
+        <a href="#" onclick="popUpdate()">Beta</a><br>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
