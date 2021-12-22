@@ -134,6 +134,7 @@ a {
 a:hover {
 	color: black;
   transition: 200ms linear;
+  font-size: 1.8rem;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -174,22 +175,15 @@ hr {
   background: #5c6bc0;
   cursor: pointer;
 }
-.centerTextXd{
-    padding-top: 7%;
-    -webkit-justify-content: center;
-    justify-content: center;
+.links {
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 .textOut {
   font-size: 1.5rem;
 	color: white;
 	text-shadow: 1px 1px 0px rgba(8, 230, 255, 1), -1px -1px 0px rgba(255, 0, 0, 1);
   display: none;
-}
-
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
 }
 
 /* The actual popup (appears on top) */
@@ -222,6 +216,19 @@ hr {
   animation: fadeIn 1s
 }
 
+.title {
+  padding-top: 70px;
+  color: white;
+  padding-left: 33px;
+  font-size: 2.1rem;
+}
+
+.social {
+  color: white;
+  padding-left: 33px;
+  padding-bottom: 20px;
+  padding-top: -50px;
+}
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
