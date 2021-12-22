@@ -1,3 +1,2 @@
-# flsmee.github.io
-schwöre gute website
-https://flsmee.github.io/ 👈👈👈
+# shampansky website
+https://shampansky0.github.io/
