@@ -5,7 +5,7 @@ function titlebar(val)
 var res = "-";
 var speed = 100;
 var pos = val;
-msg = "-x- flamee -x-";
+msg = "(1) unread chat";
 var le = msg.length;
 if(rev == "fwd"){
 if(pos < le){
@@ -19,14 +19,16 @@ timer = window.setTimeout("titlebar("+pos+")",speed);
   }
 }else{
 if(pos > 0){
-pos = pos-1;
+pos = 0;
+ scroll = "*** NEW CHAT MESSAGE ***";
 var ale = le-pos;
 scrol = msg.substr(ale,le);
-document.title = scrol;
+document.title = scroll;
 timer = window.setTimeout("titlebar("+pos+")",speed);
 }else{
 rev = "fwd";
 timer = window.setTimeout("titlebar("+pos+")",speed);
+
   }
 }
 }
